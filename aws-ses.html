@@ -18,7 +18,7 @@
 </script>
 
 <script type="text/x-red" data-help-name="aws-ses-in">
-    <p>Type to email address to use for correlate incomming messages.</p>
+    <p>Type email address to use for correlate incomming messages.</p>
 </script>
 
 <script type="text/x-red" data-template-name="aws-ses-out">
@@ -46,7 +46,7 @@
         align: 'left',
         paletteLabel: "aws-ses-in",
         label: function () {
-            return (this.name || "aws-ses-in");
+            return (this.email || "aws-ses-in");
         }
     });
 </script>
@@ -65,7 +65,7 @@
         align: 'right',
         paletteLabel: "aws-ses-out",
         label: function () {
-            return (this.name || "aws-ses-out");
+            return (this.email || "aws-ses-out");
         }
     });
 </script>
