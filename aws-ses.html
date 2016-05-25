@@ -1,0 +1,60 @@
+<!--
+ *
+ * Original work Copyright 2015 Valmet Automation Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * 
+ * Modified work Copyright 2016 Argonne National Laboratory.
+ *
+ * Licensed under the the BSD 3-Clause License (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://opensource.org/licenses/BSD-3-Clause
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+
+<script type="text/x-red" data-template-name="aws-ses-in">
+    <div class="form-row">
+        <label for="node-config-input-email"><i class="icon-envelope"></i> Email</label>
+        <input type="text" id="node-config-input-host">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="aws-ses-in">
+    <p>Type destination email address to use for correlate incomming messages to.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('aws-ses-in', {
+        category: 'output',
+        color: '#E9967A',
+        defaults: {
+            email: {value: "", required: true, validate: RED.validators.email()}
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "bridge.png",
+        align: 'right',
+        paletteLabel: "aws-ses-in",
+        label: function () {
+            return (this.name || "aws-ses");
+        }
+    });
+</script>
+

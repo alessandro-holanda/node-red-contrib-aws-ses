@@ -1,0 +1,33 @@
+{
+  "name": "node-red-contrib-aws-ses",
+  "version": "0.1.0",
+  "description": "Node-RED nodes for receive email via Amazon Simple Email Service (AWS SES).",
+  "main": "aws-ses.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altamira/node-red-contrib-aws-ses.git"
+  },
+  "keywords": [
+    "node-red",
+    "aws",
+    "ses",
+    "email"    
+  ],
+  "node-red": {
+    "nodes": {
+      "aws-ses": "aws-ses.js"
+    }
+  },
+  "author": "Alessandro Holanda",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/altamira/node-red-contrib-aws-ses/issues"
+  },
+  "homepage": "https://github.com/altamira/node-red-contrib-aws-ses#readme"
+}
