@@ -23,4 +23,4 @@ Run the following command in the root directory of your Node-RED install
 
 [1]:http://nodered.org
 [2]:http://aws.amazon.com/ses/
-[2]:https://github.com/alessandro-holanda
+[3]:https://github.com/alessandro-holanda
