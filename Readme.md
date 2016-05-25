@@ -3,7 +3,7 @@ node-red-contrib-aws-ses
 
 [![NPM](https://nodei.co/npm/node-red-contrib-aws-ses.png)](https://nodei.co/npm/node-red-contrib-aws-ses/)
 
-[Node-Red][1] Amazon Web Services Simple Email Service (AWS SES) node.
+[Node-Red][1] node for Amazon [Simple Email Service (AWS SES)][2].
 
 #Install
 
@@ -18,8 +18,9 @@ Run the following command in the root directory of your Node-RED install
 
 #Author
 
-[Alessandro Holanda][2]
+[Alessandro Holanda][3]
 
 
 [1]:http://nodered.org
+[2]:http://aws.amazon.com/ses/
 [2]:https://github.com/alessandro-holanda

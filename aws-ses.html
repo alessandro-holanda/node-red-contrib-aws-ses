@@ -1,60 +1,59 @@
-<!--
- *
- * Original work Copyright 2015 Valmet Automation Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * 
- * Modified work Copyright 2016 Argonne National Laboratory.
- *
- * Licensed under the the BSD 3-Clause License (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://opensource.org/licenses/BSD-3-Clause
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
--->
-
 <script type="text/x-red" data-template-name="aws-ses-in">
     <div class="form-row">
-        <label for="node-config-input-email"><i class="icon-envelope"></i> Email</label>
-        <input type="text" id="node-config-input-host">
+        <label for="node-input-email"><i class="icon-envelope"></i> Email</label>
+        <input type="text" id="node-input-email">
     </div>
 </script>
 
 <script type="text/x-red" data-help-name="aws-ses-in">
-    <p>Type destination email address to use for correlate incomming messages to.</p>
+    <p>Type to email address to use for correlate incomming messages.</p>
+</script>
+
+<script type="text/x-red" data-template-name="aws-ses-out">
+    <div class="form-row">
+        <label for="node-input-email"><i class="icon-envelope"></i> Email</label>
+        <input type="text" id="node-input-email">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="aws-ses-out">
+    <p>Type from email address to use for correlate outgoing messages.</p>
+    <p>TODO: other parameters like email from address, template for message body and file attachments.</p>
 </script>
 
 <script type="text/javascript">
     RED.nodes.registerType('aws-ses-in', {
-        category: 'output',
-        color: '#E9967A',
+        category: 'input',
+        color: '#E99670',
         defaults: {
             email: {value: "", required: true, validate: RED.validators.email()}
         },
         inputs: 0,
         outputs: 1,
         icon: "bridge.png",
-        align: 'right',
+        align: 'left',
         paletteLabel: "aws-ses-in",
         label: function () {
-            return (this.name || "aws-ses");
+            return (this.name || "aws-ses-in");
         }
     });
 </script>
 
+
+<script type="text/javascript">
+    RED.nodes.registerType('aws-ses-out', {
+        category: 'output',
+        color: '#E99670',
+        defaults: {
+            email: {value: "", required: true, validate: RED.validators.email()}
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: "bridge.png",
+        align: 'right',
+        paletteLabel: "aws-ses-out",
+        label: function () {
+            return (this.name || "aws-ses-out");
+        }
+    });
+</script>
