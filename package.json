@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/altamira/node-red-contrib-aws-ses.git"
+    "url": "git+https://github.com/alessandro-holanda/node-red-contrib-aws-ses.git"
   },
   "keywords": [
     "node-red",
@@ -27,7 +27,7 @@
   "author": "Alessandro Holanda",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/altamira/node-red-contrib-aws-ses/issues"
+    "url": "https://github.com/alessandro-holanda/node-red-contrib-aws-ses/issues"
   },
-  "homepage": "https://github.com/altamira/node-red-contrib-aws-ses#readme"
+  "homepage": "https://github.com/alessandro-holanda/node-red-contrib-aws-ses#readme"
 }

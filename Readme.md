@@ -12,9 +12,9 @@ Run the following command in the root directory of your Node-RED install
     npm install node-red-contrib-aws-ses
 
 #Nodes
-![alt tag](https://raw.githubusercontent.com/altamira/node-red-contrib-aws-ses/master/aws-ses-in.png)
-![alt tag](https://raw.githubusercontent.com/altamira/node-red-contrib-aws-ses/master/aws-ses-out.png)
-![alt tag](https://raw.githubusercontent.com/altamira/node-red-contrib-aws-ses/master/aws-ses-flow.png)
+![alt tag](https://raw.githubusercontent.com/alessandro-holanda/node-red-contrib-aws-ses/master/aws-ses-in.png)
+![alt tag](https://raw.githubusercontent.com/alessandro-holanda/node-red-contrib-aws-ses/master/aws-ses-out.png)
+![alt tag](https://raw.githubusercontent.com/alessandro-holanda/node-red-contrib-aws-ses/master/aws-ses-flow.png)
 
 #Author
 
